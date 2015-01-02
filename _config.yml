@@ -2,8 +2,18 @@ markdown: redcarpet
 highlighter: null
 permalink: /:title
 
+<<<<<<< HEAD
 url: 
 baseurl: /blog
+=======
+<<<<<<< HEAD
+url: 
+baseurl: /charles.github.io/blog/
+=======
+url:
+baseurl: /charles.github.io
+>>>>>>> 2febd36ae2841aec992ad326ffb8d849b4bd7980
+>>>>>>> b5896d085471f9700e810fb5b07dd540504aea20
 
 redcarpet:
   extensions: [strikethrough, tables]
