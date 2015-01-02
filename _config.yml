@@ -3,7 +3,7 @@ highlighter: null
 permalink: /:title
 
 url: 
-baseurl: /charles.github.io/blog/
+baseurl: /blog
 
 redcarpet:
   extensions: [strikethrough, tables]
