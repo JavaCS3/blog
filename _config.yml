@@ -2,8 +2,8 @@ markdown: redcarpet
 highlighter: null
 permalink: /:title
 
-url:
-baseurl:
+url: 
+baseurl: /charles.github.io/blog/
 
 redcarpet:
   extensions: [strikethrough, tables]
