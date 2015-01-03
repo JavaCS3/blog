@@ -238,6 +238,35 @@ dl,
     clear: both;
 }
 
+ul.tags {
+  margin: 3em auto 0;
+  text-align: center;
+}
+
+ul.tags li {
+  list-style: none;
+  display: inline-block;
+  margin-right: -0.1em;
+}
+
+ul.tags li a {
+  color: #ddd;
+  border-bottom: 0;
+  display: block;
+  padding: 0.2em 0.65em;
+  font-size: 1em;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  border-radius: 16px;
+}
+
+ul.tags li a:hover {
+  background: #f3f3f1;
+  color: #999;
+}
+
 /*============================================================================*/
 #logo {
   display: inline-block;
