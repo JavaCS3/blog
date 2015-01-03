@@ -238,18 +238,18 @@ dl,
     clear: both;
 }
 
-ul.tags {
-  margin: 3em auto 0;
+ul.category {
+  margin: 25px auto 25px;
   text-align: center;
 }
 
-ul.tags li {
+ul.category li {
   list-style: none;
   display: inline-block;
   margin-right: -0.1em;
 }
 
-ul.tags li a {
+ul.category li a {
   color: #ddd;
   border-bottom: 0;
   display: block;
@@ -262,8 +262,8 @@ ul.tags li a {
   border-radius: 16px;
 }
 
-ul.tags li a:hover {
-  background: #f3f3f1;
+ul.category li a:hover {
+  background: #333;
   color: #999;
 }
 
