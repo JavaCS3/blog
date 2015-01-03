@@ -1,5 +1,6 @@
 ---
 layout: post
+category: algorithm
 title: 平面内多点共线算法探究
 ---
 ### Perface
