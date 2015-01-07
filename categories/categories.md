@@ -1,0 +1,10 @@
+---
+layout: page
+title: Categories
+---
+
+<ul>
+    {% for cat in site.categories %}
+        <li>{{ cat }}</li>
+    {% endfor%}
+</ul>
