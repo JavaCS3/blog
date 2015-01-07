@@ -4,7 +4,7 @@ title: Categories
 ---
 
 <ul>
-    {% for cat in site.categories.CATEGORY %}
-        <li>{{ cat }}</li>
+    {% for cat in site.categories %}
+        <li>{{ cat | jsonify }}</li>
     {% endfor%}
 </ul>
