@@ -1,8 +1,9 @@
 - url: /
   title: Home
 
+- url: /categories
+  title: Categories
+
 - url: /about
   title: About
 
-- url: /categories
-  title: Categories
