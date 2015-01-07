@@ -4,6 +4,7 @@ permalink: /:title
 
 url:
 baseurl: /blog
+category_list: [life, algorithm]
 
 redcarpet:
   extensions: [strikethrough, tables]

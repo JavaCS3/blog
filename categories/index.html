@@ -4,7 +4,12 @@ title: Categories
 ---
 
 <ul>
-    {% for cat in site.categories %}
-        <li>{{ cat[0] }}</li>
+    {% for cat in site.category_list %}
+        <li>{{ cat }}</li>
+        <ul>
+            {% for page in site.categories[cat] %}
+            <li>{{ page.title }}</li>
+            {% endfor%}
+        </ul>
     {% endfor%}
 </ul>
