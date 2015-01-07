@@ -5,6 +5,6 @@ title: Categories
 
 <ul>
     {% for cat in site.categories %}
-        <li>{{ cat | jsonify }}</li>
+        <li>{{ cat[0] }}</li>
     {% endfor%}
 </ul>
