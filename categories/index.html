@@ -10,6 +10,7 @@ title: Categories
       <div class="card">
         <div class="content">
           <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+          <time>{{ page.date | date: "%Y-%m-%d" }}</time>
         </div>
       </div>
     {% endfor%}
