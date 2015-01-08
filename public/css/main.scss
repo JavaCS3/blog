@@ -295,19 +295,21 @@ ul.category li a:hover {
   max-width: 100%;
   position: relative;
   display: block;
-  width: 290px;
+  width: 210px;
+  height: 210px;
   min-height: 0;
   background: #fff;
   padding: 0;
   border: none;
-  border-radius: .2857rem;
   box-shadow: 0 .2em 0 0 #d4d4d5,0 0 0 1px #d4d4d5;
   -webkit-transition: box-shadow .2s ease;
   transition: box-shadow .2s ease;
   z-index: ''
 }
 
-
+.card > .content {
+  padding: 1em;
+}
 
 /*============================================================================*/
 #logo {
