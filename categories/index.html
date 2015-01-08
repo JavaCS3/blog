@@ -8,9 +8,9 @@ title: Categories
   <div class="cards">
     {% for page in site.categories[category] %}
       <div class="card">
-          <a class="content" href="{{ site.baseurl }}{{ page.url }}">
-            <h4>{{ page.title }}</h4>
-          </a>
+        <div class="content">
+          <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+        </div>
       </div>
     {% endfor%}
   </div>
