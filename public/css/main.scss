@@ -269,6 +269,14 @@ ul.category li a:hover {
 }
 
 /* cards */
+.cards:after, .card:after {
+  display:  block;
+  height: 0;
+  clear:  both;
+  overflow: hidden;
+  visibility: hidden;
+}
+
 .cards >.card {
   margin: 0 .5em 1.5em;
   float: left;
