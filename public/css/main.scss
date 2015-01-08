@@ -269,11 +269,7 @@ ul.category li a:hover {
 }
 
 /* cards */
-.cards.container {
-  padding: 0px;
-}
-
-.cards.container>.card {
+.cards >.card {
   margin: 0 .5em 1.5em;
   float: left;
 }
