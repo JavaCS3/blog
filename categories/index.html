@@ -2,9 +2,10 @@
 layout: page
 title: Categories
 ---
-<div class="cards container">
-  {% for category in site.category_list %}
-    <div>{{ category }}</div>
+
+{% for category in site.category_list %}
+  <div>{{ category }}</div>
+  <div class="cards">
     {% for page in site.categories[category] %}
       <div class="card">
         <div class="content">
@@ -12,5 +13,5 @@ title: Categories
         </div>
       </div>
     {% endfor%}
-  {% endfor%}
-</div>
+  </div>
+{% endfor%}
