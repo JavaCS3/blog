@@ -3,16 +3,14 @@ layout: page
 title: Categories
 ---
 <div class="container">
-  <ul>
-    {% for cat in site.category_list %}
-      <li>{{ cat }}</li>
+  {% for category in site.category_list %}
+    <div>{{ category }}</div>
+    {% for page in site.categories[category] %}
       <div class="card">
-          {% for page in site.categories[cat] %}
-            <div class="content">
-              <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
-            </div>
-          {% endfor%}
+        <div class="content">
+          <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+        </div>
       </div>
     {% endfor%}
-  </ul>
+  {% endfor%}
 </div>
