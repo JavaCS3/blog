@@ -2,14 +2,17 @@
 layout: page
 title: Categories
 ---
-
-<ul>
+<div class="container">
+  <ul>
     {% for cat in site.category_list %}
-        <li>{{ cat }}</li>
-        <ul>
-            {% for page in site.categories[cat] %}
-            <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
-            {% endfor%}
-        </ul>
+      <li>{{ cat }}</li>
+      <div class="card">
+          {% for page in site.categories[cat] %}
+            <div class="content">
+              <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+            </div>
+          {% endfor%}
+      </div>
     {% endfor%}
-</ul>
+  </ul>
+</div>
