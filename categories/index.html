@@ -4,7 +4,11 @@ title: Categories
 ---
 
 {% for category in site.category_list %}
-  <div class="label">{{ category }}</div>
+  <div class="label">{{ category }}
+    <div class="detail">
+      {{ site.categories[category] | size }}
+    </div>
+  </div>
   <div class="cards">
     {% for page in site.categories[category] %}
       <a class="card" href="{{ site.baseurl }}{{ page.url }}">
