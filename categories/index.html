@@ -4,7 +4,7 @@ title: Categories
 ---
 
 {% for category in site.category_list %}
-  <div>{{ category }}</div>
+  <div class="label">{{ category }}</div>
   <div class="cards">
     {% for page in site.categories[category] %}
       <a class="card" href="{{ site.baseurl }}{{ page.url }}">
