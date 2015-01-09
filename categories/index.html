@@ -4,7 +4,7 @@ title: Categories
 ---
 
 {% for category in site.category_list %}
-  <div class="label">{{ category }}
+  <div class="label" id="{{ category }}">{{ category }}
     <div class="detail">
       {{ site.categories[category] | size }}
     </div>
