@@ -7,14 +7,14 @@ title: Categories
   <div>{{ category }}</div>
   <div class="cards">
     {% for page in site.categories[category] %}
-      <div class="card">
+      <a class="card" href="{{ site.baseurl }}{{ page.url }}">
         <div class="content">
-          <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+          <h4>{{ page.title }}</h4>
         </div>
         <div class="extra content">
           <time>{{ page.date | date: "%Y-%m-%d" }}</time>
         </div>
-      </div>
+      </a>
     {% endfor%}
   </div>
 {% endfor%}
