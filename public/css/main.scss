@@ -127,6 +127,14 @@ footer {
       background-color: darken($label-bg-color, 8%);
     }
   }
+
+  .card {
+    color: $azul-accent-color;
+    &:hover {
+      color: darken($azul-accent-color, 8%);
+      background-color: darken(#FFF, 8%);
+    }
+  }
 }
 
 .ruby { a { color: $ruby-accent-color;
