@@ -112,11 +112,21 @@ footer {
 }
 
 /*============================================================================*/
-.azul { a { color: $azul-accent-color;
-    &:hover { color: darken($azul-accent-color, 20%);
-      .label { color: #FFF;
-        &:hover { background-color: darken($label-bg-color, 80%);
-}}}}}
+.azul { 
+  a { 
+    color: $azul-accent-color;
+    &:hover { 
+      color: darken($azul-accent-color, 20%);
+    }
+  }
+  
+  .label { 
+    color: #FFF;
+    &:hover { 
+      background-color: darken($label-bg-color, 80%);
+    }
+  }
+}
 
 .ruby { a { color: $ruby-accent-color;
     &:hover { color: darken($ruby-accent-color, 20%);
