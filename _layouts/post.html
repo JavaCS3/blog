@@ -6,5 +6,5 @@ layout: default
   <time class="published" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%Y-%m-%d" }}</time>
   <h2>{{ page.title }}</h2>
   {{ content }}
-  <a class="label margin-small">{{ page.category }}</a>
+  <a class="label margin-small" href="{{ site.baseurl }}categories/#{{ page.category }}">{{ page.category }}</a>
 </article>
