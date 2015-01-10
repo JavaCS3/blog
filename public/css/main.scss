@@ -309,6 +309,16 @@ dl,
   padding: 0 0.7em 0.3em;
 }
 
+.card > .progress {
+  position: absolute;
+  font-size: 0.9rem;
+  right: 0;
+  bottom: 0.5em;
+  color: #FFF;
+  background-color: #5BBD72;
+  padding: 0px 0.5em;
+}
+
 /* label */
 .label {
     display: inline-block;
