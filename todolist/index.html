@@ -5,6 +5,9 @@ title: TODO
 <div class="cards">
 {% for todo in site.data.todo %}
   <div class="card">
+    <div class="image">
+      <img src="{{ todo.image }}"/>
+    </div>
     <div class="extra content">{{ todo.title }}</div>
   </div>
 {% endfor %}
