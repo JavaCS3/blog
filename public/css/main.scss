@@ -11,6 +11,8 @@ $ruby-accent-color: #e0115f;
 $amber-accent-color: #ff7e00;
 $avocado-accent-color: #568203;
 
+$label-bg-color: #3B83C0;
+
 /*============================================================================*/
 * {
   margin: 0;
@@ -112,7 +114,9 @@ footer {
 /*============================================================================*/
 .azul { a { color: $azul-accent-color;
     &:hover { color: darken($azul-accent-color, 20%);
-}}}
+      .label { color: #FFF;
+        &:hover { background-color: darken($label-bg-color, 80%);
+}}}}}
 
 .ruby { a { color: $ruby-accent-color;
     &:hover { color: darken($ruby-accent-color, 20%);
@@ -238,36 +242,6 @@ dl,
     clear: both;
 }
 
-ul.category {
-  margin: 25px auto 25px;
-  text-align: center;
-}
-
-ul.category li {
-  list-style: none;
-  display: inline-block;
-  margin-right: -0.1em;
-}
-
-ul.category li a {
-  background: #777;
-  color: #ddd;
-  border-bottom: 0;
-  display: block;
-  padding: 0.2em 0.65em;
-  font-size: 1em;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  -ms-border-radius: 16px;
-  -o-border-radius: 16px;
-  border-radius: 16px;
-}
-
-ul.category li a:hover {
-  background: #333;
-  color: #FFF;
-}
-
 /* cards */
 .cards:after, .card:after {
   display:  block;
@@ -328,8 +302,8 @@ ul.category li a:hover {
     vertical-align: baseline;
     line-height: 1;
     margin: 0px 0.125em;
-    background-color: #3B83C0;
-    border-color: #3B83C0;
+    background-color: $label-bg-color;
+    border-color: $label-bg-color;
     padding: 0.6em 0.8em;
     color: #FFF;
     text-transform: none;
