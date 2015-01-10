@@ -4,6 +4,9 @@
 - url: /categories
   title: Categories
 
+- url: /todolist
+  title: Todo
+
 - url: /about
   title: About
 
