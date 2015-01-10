@@ -3,9 +3,7 @@ layout: page
 title: TODO
 ---
 <div class="cards">
-{{ site.data.todo }}
 {% for todo in site.data.todo %}
-  {{ todo }}
   <div class="card">
     <div class="extra content">{{ todo.title }}</div>
   </div>
