@@ -131,8 +131,8 @@ footer {
   .card {
     color: $azul-accent-color;
     &:hover {
-      color: darken($azul-accent-color, 8%);
-      background-color: darken(#FFF, 8%);
+      color: #EEE;
+      background-color: darken(#FFF, 90%);
     }
   }
 }
