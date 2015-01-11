@@ -355,9 +355,17 @@ dl,
 .image {
   height: 200px;
   padding: 0.7em 0.7em 0.3em;
+  background-image: none;
+  background-repeat:no-repeat;
   background-size: cover;
   background-clip: content-box;
-  background-color: $contrast-color;
+  background-color: #CFCFCF;
+  -webkit-transition: background-position 0.3s ease;
+  transition: background-position 0.3s ease;
+}
+
+.image:hover {
+  background-position:0 20%;
 }
 
 /*============================================================================*/
