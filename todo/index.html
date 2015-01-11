@@ -18,7 +18,7 @@ title: TODO
     {% elsif todo.progress < 0.2 %}
       {% assign state = 'xs' %}
     {% endif %}
-    <div class="progress{{ state }}">{{ todo.progress | times: 100}}%</div>
+    <div class="progress {{ state }}">{{ todo.progress | times: 100}}%</div>
   </a>
 {% endfor %}
 </div>
