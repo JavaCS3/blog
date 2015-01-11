@@ -5,7 +5,7 @@ title: TODO
 <div class="cards">
 {% for todo in site.data.todo %}
   <div class="card">
-    <a class="image" style="background-image:url({{ todo.image }})"></div>
+    <div class="image" style="background-image:url({{ todo.image }})"></div>
     <div class="extra content"><a href="{{ todo.link }}">{{ todo.title }}</a></div>
     <div class="extra content"><time>{{ todo.date }}</time></div>
     <div class="progress">{{ todo.progress | times: 100}}%</div>
