@@ -315,8 +315,28 @@ dl,
   right: 0;
   bottom: 0.5em;
   color: #FFF;
-  background-color: #5BBD72;
+  background-color: #888;
   padding: 0px 0.5em;
+}
+
+.progress.xs {
+  background-color: #888;
+}
+
+.progress.s {
+  background-color: #D95C5C;
+}
+
+.progress.m {
+  background-color: #E6BB48;
+}
+
+.progress.l {
+  background-color: #B4D95C;
+}
+
+.progress.xl {
+  background-color: #5BBD72;
 }
 
 /* label */
