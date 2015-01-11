@@ -11,9 +11,9 @@ title: TODO
     <div class="extra content"><time>{{ todo.date }}</time></div>
     {% if todo.progress > 0.9 %}
       {% assign state = 'xl' %}
-    {% elsif todo.progress > 0.7 %}
+    {% elsif todo.progress > 0.8 %}
       {% assign state = 'l' %}
-    {% elsif todo.progress > 0.4 %}
+    {% elsif todo.progress > 0.5 %}
       {% assign state = 'm' %}
     {% elsif todo.progress > 0.2 %}
       {% assign state = 's' %}
