@@ -9,13 +9,15 @@ title: TODO
     <div class="image" style="background-image:url({{ todo.image }})"></div>
     <div class="extra content">{{ todo.title }}</div>
     <div class="extra content"><time>{{ todo.date }}</time></div>
-    {% if todo.progress < 0.9 %}
+    {% if todo.progress > 0.9 %}
+      {% assign state = 'xl' %}
+    {% elsif todo.progress > 0.7 %}
       {% assign state = 'l' %}
-    {% elsif todo.progress < 0.7 %}
+    {% elsif todo.progress > 0.4 %}
       {% assign state = 'm' %}
-    {% elsif todo.progress < 0.4 %}
+    {% elsif todo.progress > 0.2 %}
       {% assign state = 's' %}
-    {% elsif todo.progress < 0.2 %}
+    {% else %}
       {% assign state = 'xs' %}
     {% endif %}
     <div class="progress {{ state }}">{{ todo.progress | times: 100}}%</div>
