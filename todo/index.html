@@ -4,7 +4,8 @@ title: TODO
 ---
 <div class="cards">
 {% assign state = 'xl' %}
-{% for todo in site.data.todo %}
+{% assign sorted_todo = site.data.todo | sort: 'progress' %}
+{% for todo in sorted_todo %}
   <a class="card" href="{{ todo.link }}">
     <div class="image" style="background-image:url({{ todo.image }})"></div>
     <div class="extra content">{{ todo.title }}</div>
