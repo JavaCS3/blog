@@ -44,7 +44,7 @@ A：分享知识，记录自己的点滴
 
 1. 2012年7月莫名的成立了自己第一个[Weebly博客](http://cooljstyle.weebly.com/)
 2. 期间记录自己的点点滴滴，并在2013年许愿一年内累计访问突破1K还希望未来能给自己带来点收入（咳咳，想太多了）
-3. 为了让自己的博客与众不同，学了很多Web知识和“左道”
+3. 为了让自己的博客与众不同，学了很多Web知识和“旁门左道”
 4. 2014年3月当愿望达成时候也开始反省自己所付出努力，最后毅然决然放弃了自己的[Weebly博客](http://cooljstyle.weebly.com/)(主要原因应该是自己的“强迫症”)并转至[Scriptogr.am](http://scriptogr.am/javacs3)
 5. 由于种种原因我并没有化很多时间投入在[Scriptogr.am](http://scriptogr.am/javacs3)上
 6. 直到有一天我看到了阮一峰的[这篇文章](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)，顿时豁然开朗（总结的实在是精辟）
