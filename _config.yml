@@ -7,7 +7,7 @@ baseurl: /blog
 category_list: [life, algorithm, web]
 
 redcarpet:
-  extensions: [strikethrough, tables]
+  extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
 
 sass:
   sass_dir: public/css
