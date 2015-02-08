@@ -1,5 +1,5 @@
 markdown: redcarpet
-highlighter: null
+highlighter: pygments
 permalink: /:title
 
 url:
@@ -7,7 +7,7 @@ baseurl: /blog
 category_list: [life, algorithm, web]
 
 redcarpet:
-  extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
+  extensions: [strikethrough, tables]
 
 sass:
   sass_dir: public/css
