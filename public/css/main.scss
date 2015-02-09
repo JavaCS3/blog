@@ -73,10 +73,12 @@ code {
 }
 
 p code {
-  padding: 0px 5px;
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
   border: 1px solid #ddd;
-  background-color: #f8f8f8;
-  border-radius: 3px;
+  border-radius: 4px;
   white-space: nowrap;
 }
 
