@@ -14,7 +14,7 @@ LAN-users might want to access files on more disks than the one that is physical
 NFS provides transparent file access for clients to files and filesystems on a server.  This means that a user need not know if the file (s)he wants to access is physically located on his/her local computer or not, as long as the filesystem containing the file is mounted to his/her local filesystem.
 
 The figure below shows how files are accessed in a NFS-system.
-![figure](http://euclid.nmu.edu/~rappleto/Classes/CS442/Notes/nfs.gif)
+![figure](http://euclid.nmu.edu/~rappleto/Classes/CS442/Notes/nfs.gif)  
 When a user-process wants to access a local file the client kernel uses a local file access, but when a user-process wants to access a remote file, the kernel sends RPC-calls to the NFS server over TCP/IP or (more likely) UDP/IP. The NFS server then accesses its local file, and sends the result back to the NFS client.
 
 NFS is part of the operating system kernel. Nothing special need be done by the client program to use NFS . The kernel detects that the file is remote and automatically generates the RPC calls to access the file.
