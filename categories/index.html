@@ -5,26 +5,19 @@ title: Categories
 
 {% for category in site.categories %}
   {% assign category_name = category[0] %}
-  <p>{{ category_name }}</p>
-{% endfor %}
-
-
-{% for category in site.category_list %}
-  <a class="label margin-small" id="{{ category }}" href="#{{ category }}">{{ category }}
+  <!-- categories tag -->
+  <a class="label margin-small" id="{{ category_name }}" href="#{{ category_name }}">{{ category_name }}
     <div class="detail">
-      {{ site.categories[category] | size }}
+      {{ site.categories[category_name] | size }}
     </div>
   </a>
-  <div class="cards">
-    {% for page in site.categories[category] %}
-      <a class="card" href="{{ site.baseurl }}{{ page.url }}">
-        <div class="content">
-          {{ page.title }}
-        </div>
-        <div class="extra content">
-          <time>{{ page.date | date: "%Y-%m-%d" }}</time>
-        </div>
-      </a>
-    {% endfor %}
-  </div>
+  <!-- categories pages -->
+  {% for page in site.categories[category_name] %}
+  <article class="row gutters">
+    <a class="card" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+    <div class="post-date col span_4">
+      <time>{{ page.date | date: "%Y-%m-%d" }}</time>
+    </div>
+  </article>
+  {% endfor %}
 {% endfor %}
