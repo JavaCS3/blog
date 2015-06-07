@@ -3,7 +3,8 @@ layout: page
 title: Categories
 ---
 
-{% for category_name in site.categories %}
+{% for category in site.categories %}
+  {% assign category_name = category[0] %}
   <p>{{ category_name }}</p>
 {% endfor %}
 
