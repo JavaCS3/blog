@@ -15,14 +15,15 @@ title: Categories
       </a>
     </div>
     <!-- categories pages -->
-    <div class="col span_10">
     {% for page in site.categories[category_name] %}
-      <div>
+      <div class="col span_10">
         <article class="row gutters">
           <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+          <!-- <div class="post-date col span_2">
+            <time>{{ page.date | date: "%Y-%m-%d" }}</time>
+          </div> -->
         </article>
       </div>
     {% endfor %}
-    </div>
   </div>
 {% endfor %}
