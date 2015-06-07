@@ -109,4 +109,4 @@ setTimeout(callback, 0); // WTF
 所以`setTimeout(callback, 0)`的真正意图是为了提高UI的响应速度，把任务拆分放在后面的事件循环去做。不知道大家有没有明白其中的奥妙。
 
 ### 后记
-如果大家有兴趣了解Javascript的时间循环机制，可以看看[这篇文章](http://www.ruanyifeng.com/blog/2014/10/event-loop.html)。还有这个[视频](https://vimeo.com/96425312)。
+如果大家有兴趣了解Javascript的时间循环机制，可以看看[这篇文章](http://www.ruanyifeng.com/blog/2014/10/event-loop.html)and[视频](https://vimeo.com/96425312)。
