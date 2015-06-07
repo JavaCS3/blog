@@ -3,7 +3,9 @@ layout: page
 title: Categories
 ---
 
-<p>{{ site.categories }}</p>
+{% for category_name in site.categories %}
+  <p>{{ category_name }}</p>
+{% endfor %}
 
 
 {% for category in site.category_list %}
