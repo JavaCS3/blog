@@ -9,6 +9,7 @@ title: Chrome Developer Tool 探究 Javascript 事件循环
 
 ### 简单的栗子
 先来看一段代码：
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -25,6 +26,7 @@ title: Chrome Developer Tool 探究 Javascript 事件循环
 </body>
 </html>
 ```
+
 这段代码的功能很简单，就是当鼠标点击按钮的时候调用`onClick()`函数打印一个`log`而已。
 
 然而，如果把这段内嵌的Javascript看成别的运行脚本(`Python`, `Shell`...)。直觉会告诉你，当函数`onClick`被解析完后整个程序应该退出才对。为啥我点下按钮时还会再触发一次？这就是事件循环搞得“鬼”，我会在下文中给出解答。
@@ -38,6 +40,7 @@ title: Chrome Developer Tool 探究 Javascript 事件循环
 
 ### 函数的直接调用
 上代码：
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -58,6 +61,7 @@ title: Chrome Developer Tool 探究 Javascript 事件循环
 </body>
 </html>
 ```
+
 这个例子功能同样比较简单，只不过在`onClick`的调用中增加了一个新的`callback()`函数。那么这个情况的时间分布图是怎样的呢？
 
 ![direct_call](http://photo.yupoo.com/javacs3/EHDj4uYi/OwTl0.png)
@@ -66,12 +70,15 @@ title: Chrome Developer Tool 探究 Javascript 事件循环
 
 ### “异步”回调
 我们经常会在`Javascript`中看到类似这样的代码：
+
 ```javascript
 setTimeout(callback, 0); // WTF
 ```
+
 不了解事件循环的话，看这段代码会非常费解。为什么不直接调`callback()`而是触发一个定时为0的Timeout。看到下面这个图大概你就明白了原理了。
 
 上代码：
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -92,6 +99,7 @@ setTimeout(callback, 0); // WTF
 </body>
 </html>
 ```
+
 时间图：
 
 ![async_call](http://photo.yupoo.com/javacs3/EHDj4NZP/B1fYv.png)
