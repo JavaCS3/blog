@@ -6,7 +6,7 @@ title: Categories
 {% for category in site.categories %}
   {% assign category_name = category[0] %}
   <!-- categories tag -->
-  <div class="col span_2">
+  <div>
     <a class="label margin-small" id="{{ category_name }}" href="#{{ category_name }}">{{ category_name }}
       <div class="detail">
         {{ site.categories[category_name] | size }}
@@ -15,7 +15,7 @@ title: Categories
   </div>
   <!-- categories pages -->
   {% for page in site.categories[category_name] %}
-  <div class="col span_10">
+  <div class="col span_12">
     <article class="row gutters">
       <a class="col span_8" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
       <div class="post-date col span_4">
