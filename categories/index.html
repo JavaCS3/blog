@@ -3,6 +3,9 @@ layout: page
 title: Categories
 ---
 
+<p>{{ site.categories }}</p>
+
+
 {% for category in site.category_list %}
   <a class="label margin-small" id="{{ category }}" href="#{{ category }}">{{ category }}
     <div class="detail">
