@@ -64,7 +64,7 @@ title: Chrome Developer Tool 探究 Javascript 事件循环
 
 这个例子功能同样比较简单，只不过在`onClick`的调用中增加了一个新的`callback()`函数。那么这个情况的时间分布图是怎样的呢？
 
-![direct_call](http://photo.yupoo.com/javacs3/EHDj4uYi/OwTl0.png)
+![direct_call](http://pic.yupoo.com/javacs3/EHDj4uYi/OwTl0.png)
 
 这里可以发现一个小细节：同一个调用栈内的函数的时间分别总是在同一个层级上的。
 
@@ -102,7 +102,7 @@ setTimeout(callback, 0); // WTF
 
 时间图：
 
-![async_call](http://photo.yupoo.com/javacs3/EHDj4NZP/B1fYv.png)
+![async_call](http://pic.yupoo.com/javacs3/EHDj4NZP/B1fYv.png)
 
 可以发现虽然`setTimeout`的定时参数为Zero，但是实际上Timeout的回调大概在2ms以后再执行。夹在当中是浏览器的一些绘制事件。
 
