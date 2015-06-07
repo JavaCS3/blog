@@ -15,12 +15,14 @@ title: Categories
       </a>
     </div>
     <!-- categories pages -->
+    <div class="col span_10">
     {% for page in site.categories[category_name] %}
-      <div class="col span_10">
+      <div>
         <article class="row gutters">
           <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
         </article>
       </div>
     {% endfor %}
+    </div>
   </div>
 {% endfor %}
