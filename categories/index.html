@@ -14,7 +14,7 @@ title: Categories
   <!-- categories pages -->
   {% for page in site.categories[category_name] %}
   <article class="row gutters">
-    <a class="card" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+    <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
     <div class="post-date col span_4">
       <time>{{ page.date | date: "%Y-%m-%d" }}</time>
     </div>
