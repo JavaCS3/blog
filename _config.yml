@@ -4,7 +4,7 @@ permalink: /:title
 
 url:
 baseurl: /blog
-category_list: [life, algorithm, web, practice, linux]
+category_list: [life, algorithm, web, practice, linux, javascript]
 
 redcarpet:
   extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
