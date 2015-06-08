@@ -6,7 +6,7 @@ title: Categories
 {% for category in site.categories %}
   {% assign category_name = category[0] %}
   <!-- categories tag -->
-  <div>
+  <div class="center">
     <a class="label margin-small" id="{{ category_name }}" href="#{{ category_name }}">{{ category_name }}
       <div class="detail">
         {{ site.categories[category_name] | size }}
@@ -14,7 +14,7 @@ title: Categories
     </a>
   </div>
   <!-- categories pages -->
-  <div>
+  <div class="center">
     {% for page in site.categories[category_name] %}
       <div>
         <article class="row gutters">
