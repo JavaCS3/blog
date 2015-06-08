@@ -117,7 +117,7 @@ footer {
 /*============================================================================*/
 .azul {
   a {
-    color: $azul-accent-color
+    color: $azul-accent-color;
     &:hover {
       color: darken($azul-accent-color, 20%);
     }
