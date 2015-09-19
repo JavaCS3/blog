@@ -25,7 +25,19 @@ title: Categories
     {% endfor %}
   </div> -->
   <div class="bundle row gutters">
+    <!-- categories title -->
     <h2 class="col span_2">{{ category_name }}</h2>
+    <!-- detail -->
+    <div class="col span_10">
+    {% for page in site.categories[category_name] %}
+      <article class="row gutters">
+        <a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+        <div class="post-date col span_4">
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %-d" }}</time>
+        </div>
+      </article>
+    {% endfor %}
+    </div>
   </div>
 {% endfor %}
 </section>
