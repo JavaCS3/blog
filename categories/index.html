@@ -3,18 +3,19 @@ layout: default
 title: Categories
 ---
 
+<section class="archive">
 {% for category in site.categories %}
-  {% assign category_name = category[0] %}
+{% assign category_name = category[0] %}
   <!-- categories tag -->
-  <div class="center">
+<!--   <div class="center">
     <a class="label margin-small" id="{{ category_name }}" href="#{{ category_name }}">{{ category_name }}
       <div class="detail">
         {{ site.categories[category_name] | size }}
       </div>
     </a>
-  </div>
+  </div> -->
   <!-- categories pages -->
-  <div class="center">
+ <!--  <div class="center">
     {% for page in site.categories[category_name] %}
       <div>
         <article class="row gutters">
@@ -22,5 +23,9 @@ title: Categories
         </article>
       </div>
     {% endfor %}
+  </div> -->
+  <div class="bundle row gutters">
+    <h2 class="col span_2">{{ category_name }}</h2>
   </div>
 {% endfor %}
+</section>
