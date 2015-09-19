@@ -3,19 +3,19 @@ layout: post
 category: algorithm
 title: 平面内多点共线算法探究
 ---
-### Perface
+## Perface
 
 数据结构与算法可谓是计算机领域里面非常重要的知识。
 最近我在[Coursera.org](http://www.coursera.org)温故温故这门课程。
 今天就给大家分享一次作业题中的心得！
 
-### Question
+## Question
 
 > Given a set of N distinct points in the plane, draw every (maximal) line segment that connects a subset of 4 or more of the points.
 	
 ![pic](http://coursera.cs.princeton.edu/algs4/assignments/lines2.png)
 
-### Solution
+## Solution
 
 1. 暴力法
 
@@ -50,7 +50,7 @@ title: 平面内多点共线算法探究
 
     然而，说得容易，做起来其实很困难！
 
-### Details
+## Details
 
 1. 如何遍历每一个点？
 
@@ -112,7 +112,7 @@ title: 平面内多点共线算法探究
 
     一种简单可行的方法是：当要输出一个线段序列的时候，检查之后的顺序是否比首元素自然顺序小。如果存在那肯定是乱序，因此跳过这种情况即可！（能想到这一点确实不容易，我也是在论坛里看到别人的留言后顿悟的）
 
-### Summery
+## Summery
     
 使用先排序的方法确实会使效率提升不少！我的实现方法由于每次挑选新的`p`的过程中存在排序，因此时间复杂度为`O(N^2log(N) + Nlog(N)) = O(N^2log(N))`也算达到了预期吧！
 

@@ -4,7 +4,7 @@ category: web
 title: Learning CSS Layout
 ---
 
-### 前言
+## 前言
 最近费了好大劲才把博客迁移到了[Github](http://javacs3.github.io/blog/) 上来。于是，重新开始了博客的“装修”工作。
 
 话说“装修”这件事还真不容易：各种样式，排版等等。很是费劲。

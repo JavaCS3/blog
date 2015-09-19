@@ -3,7 +3,7 @@ layout: default
 title: About 
 ---
 
-### Me
+## Me
 一言以蔽之：  
 一个爱卖萌的程序猴～
 
@@ -39,7 +39,7 @@ Q：为什么要建立博客？
 A：分享知识，记录自己的点滴  
 [updated @ 2015-01-11]
 
-### About this blog
+## About this blog
 话说为了创办自己的博客前前后后折腾了不少精力：
 
 1. 2012年7月莫名的成立了自己第一个[Weebly博客](http://cooljstyle.weebly.com/)

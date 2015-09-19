@@ -32,15 +32,18 @@ VmSwap:	       0 kB
 
 ```bash
 #!/bin/bash
-head=$(cat /proc/2483/status | grep 'Vm' | awk -F ': *' '{print $1}')
-body=$(cat /proc/2483/status | grep 'Vm' | awk -F ': *' '{print $2}')
+head=$(cat /proc/2483/status | \
+       grep 'Vm' | \
+       awk -F ': *' '{print $1}')
+body=$(cat /proc/2483/status | \
+       grep 'Vm' | \
+       awk -F ': *' '{print $2}')
 echo $head
 echo $body
 ```
 
-Output
-
 ```bash
-VmPeak VmSize VmLck VmPin VmHWM VmRSS VmData VmStk VmExe VmLib VmPTE VmSwap
-28184 kB 28120 kB 0 kB 0 kB 5292 kB 5260 kB 3224 kB 136 kB 956 kB 2288 kB 80 kB 0 kB
+# output
+VmPeak VmSize VmLck VmPin VmHWM VmRSS VmData ...
+28184 kB 28120 kB 0 kB 0 kB 5292 kB 5260 kB 3224 kB ...
 ```
