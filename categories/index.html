@@ -8,12 +8,12 @@ title: Categories
 {% assign category_name = category[0] %}
   <div class="bundle row gutters fadeInDown animated">
     <!-- categories title -->
-    <h2 class="col span_2">{{ category_name }}</h2>
+    <h2 class="col span_2" id="{{ category_name }}">{{ category_name }}</h2>
     <!-- detail -->
     <div class="col span_10">
     {% for post in site.categories[category_name] %}
       <article class="row gutters">
-        <a class="col span_8" href="{{ site.baseurl }}{{ post.url }}" id="{{ category_name }}">{{ post.title }}</a>
+        <a class="col span_8" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         <div class="post-date col span_4">
           <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %-d" }}</time>
         </div>
