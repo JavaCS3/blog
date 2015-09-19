@@ -32,7 +32,7 @@ title: Categories
     {% for post in site.categories[category_name] %}
       <article class="row gutters">
         <a class="col span_8" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        <div class="col span_4">
+        <div class="post-date col span_4">
           <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %-d" }}</time>
         </div>
       </article>
