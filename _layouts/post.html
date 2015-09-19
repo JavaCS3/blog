@@ -4,7 +4,7 @@ layout: default
 
 <article class="row gutters">
   <time class="published" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%Y-%m-%d" }}</time>
-  <h2>{{ page.title }}</h2>
+  <h1>{{ page.title }}</h1>
   {{ content }}
   <a class="label margin-small" 
      href="{{ site.baseurl }}{{ site.data.links[1].url }}/#{{ page.category }}">
