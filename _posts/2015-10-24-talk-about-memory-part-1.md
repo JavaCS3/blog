@@ -40,4 +40,11 @@ title: 内存解析（一）：内存类型（译）
 ### 页（Pages）
 虚拟内存被分割成页。每一页的大小是由CPU来决定的，通常为4KB。也就是说，内核的内存管理粒度是页。当你申请新的内存时，内核会给你一页或几页。当你释放内存时，也是释放一页或几页。每个细粒度的API（如`malloc`）是在用户态实现的。
 
-对于每分配的页，内核管理着一堆权限：页的可写、可读、与/或可执行（不是所有的组合都是可能的）。这些权限既可以在内存映射的时候设置也可以在`mprotect()`系统调用后设置。未分配的页是不可以被访问的。当你在某一页执行一个禁止的操作时（比如去读一个没有读权限的页），你将触发（Linux上）段错误（Segmentation Fault）。说句题外话，由于segmentation fault是以页为粒度的，你可能会遇到越界访问（out-of-buffer accesses）没导致Segfault的情况。
+对于每分配的页，内核管理着一堆权限：页的可写、可读、与/或可执行（不是所有的组合都是可能的）。这些权限既可以在内存映射的时候设置也可以在`mprotect()`系统调用后设置。未分配的页是不可以被访问的。当你在某一页执行一个禁止的操作时（比如去读一个没有读权限的页），你将触发（Linux上）段错误（Segmentation Fault）。说句题外话，由于Segmentation fault是以页为粒度的，你可能会遇到越界访问（out-of-buffer accesses）没导致Segfault的情况。
+
+## 内存类型
+并非所有的虚拟内存空间中分配的内存是相同的。我们可以通过两个轴来分类：第一个轴为内存是否为私有的（针对进程来说）或共享的，第二个轴为内存是否是文件背景的（若为非文件背景的则称之为匿名：anonymous）。下面问哦门来看看这四类：
+
+|             | PRIVATE | SHARED |
+|  ANONYMOUS  | `statck, malloc(), mmap(ANON, PRIVATE), brk()/sbrk` | `mmap(ANON, SHARED)` |
+| FILE-BACKED | `mmap(fd, PRIVATE), binary/shared libraries` | `mmap(fd, SHARED)` |
