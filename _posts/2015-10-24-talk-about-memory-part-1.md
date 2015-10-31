@@ -45,6 +45,7 @@ title: 内存解析（一）：内存类型（译）
 ## 内存类型
 并非所有的虚拟内存空间中分配的内存是相同的。我们可以通过两个轴来分类：第一个轴为内存是否为私有的（针对进程来说）或共享的，第二个轴为内存是否是文件背景的（若为非文件背景的则称之为匿名：anonymous）。下面问哦门来看看这四类：
 
-|             | PRIVATE | SHARED |
-|  ANONYMOUS  | `statck, malloc(), mmap(ANON, PRIVATE), brk()/sbrk` | `mmap(ANON, SHARED)` |
-| FILE-BACKED | `mmap(fd, PRIVATE), binary/shared libraries` | `mmap(fd, SHARED)` |
+|                 | PRIVATE | SHARED |
+|-----------------|---------|--------|
+|  **ANONYMOUS**  | `statck, malloc(), mmap(ANON, PRIVATE), brk()/sbrk` | `mmap(ANON, SHARED)` |
+| **FILE-BACKED** | `mmap(fd, PRIVATE), binary/shared libraries` | `mmap(fd, SHARED)` |
